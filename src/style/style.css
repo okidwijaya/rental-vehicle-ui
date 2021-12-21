@@ -1126,10 +1126,11 @@ nav {
     background-color: #FFCD61 !important;
 }
 
-.container-fluid input {
+
+/* .container-fluid input {
     border: none;
     width: 2%;
-}
+} */
 
 
 /* input::-webkit-outer-spin-button,
