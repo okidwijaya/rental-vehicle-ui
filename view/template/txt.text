@@ -1,3 +1,84 @@
+
+
+////////////////////////////////////
+/// detail cxards
+//////////////////////////
+ <script>
+        $(document).ready(function() {
+            $('.count').prop('disabled', true);
+            $(document).on('click', '.plus', function() {
+                $('.count').val(parseInt($('.count').val()) + 1);
+            });
+            $(document).on('click', '.minus', function() {
+                $('.count').val(parseInt($('.count').val()) - 1);
+                if ($('.count').val() == 0) {
+                    $('.count').val(1);
+                }
+            });
+        });
+    </script>
+//////////////////
+<div class="row"> 
+                        <div class="col-md-6">
+                            <img src="/src/images/popular-one.png" class="img-thumbnail" alt="...">
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body ">
+                                    <h1 class="display-5 ">Fixie Gray - Yogyakarta</h1>
+                                    <h4 class="card-subtitle mb-2 ">Available</h4>
+                                    <h4 class="card-subtitle mb-2 ">No prepayment</h4>
+                                    <p class="card-text ">Capacity : 1 Person</p>
+                                    <p class="card-text ">Type : Bike</p>
+                                    <p class="card-text ">Reservaton before 2 PM</p>
+                                    <div class="qty mt-5 ">
+                                        <div>
+                                            <span class="minus ">-</span>
+                                            <input type="number " class="count " name="qty " value="1 ">
+                                            <span class="plus ">+</span></div>
+                                        <div>
+                                            <h4>Rp. 128.000/day</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid ">
+                                <button type="button " class="btn btn-dark ">Dark</button>
+                                <button type="button " class="btn btn-warning ">Warning</button>
+                                <button type="button " class="btn btn-dark "><i class="bi bi-heart-fill " style="color: #FFCD61; "></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+////////////////////////////////////////////////////////////////////////
+<nav class="navbar navbar-expand-lg navbar-light bg-">
+            <a class="navbar-brand" href="#">
+                <img src="/src/images/dot.png" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Vehicle Type</a>
+                    <a class="nav-item nav-link" href="#">History</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                </div>
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <button class="btn btn-sm btn-outline-warning" type="button">Main button</button>
+                        <button class="btn btn-sm btn-warning yellow-color" type="button">Smaller button</button>
+                    </form>
+                </nav>
+            </div>
+        </nav>
+
  ////////////////////rate starts
  *html
  <div class="container">
@@ -45,3 +126,201 @@ $(document).ready(function() {
                     </div>
 
                 </div>
+
+
+/////grid popular veihiew
+<section>
+    <div class="popular-section-details">
+        <div class="container-fluid">
+            <h1>Popular In Town</h1>
+            <p>Click item to see details and reservation</p>
+
+            <div class="row">
+
+                <div class="card col-sm">
+                    <!-- home-popular-card -->
+                    <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Merapi</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Teluk Bogam</strong></p>
+                        <p><small>Kalimantan</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Bromo</strong></p>
+                        <p><small>Malang</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Malioboro</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+
+                <div class="card col-sm">
+                    <!-- home-popular-card -->
+                    <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Merapi</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Teluk Bogam</strong></p>
+                        <p><small>Kalimantan</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Bromo</strong></p>
+                        <p><small>Malang</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Malioboro</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+
+                <div class="card col-sm">
+                    <!-- home-popular-card -->
+                    <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Merapi</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Teluk Bogam</strong></p>
+                        <p><small>Kalimantan</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Bromo</strong></p>
+                        <p><small>Malang</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm">
+                    <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+                    <div class="card-body">
+                        <p><strong>Malioboro</strong></p>
+                        <p><small>Yogyakarta</small></p>
+                    </div>
+                </div>
+
+            </div>
+            <p>There is no vehicle left</p>
+        </div>
+    </div>
+</section>
+<div class="container-fluid grid-details">
+
+    <div class="card">
+        <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Merapi</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Teluk Bogam</strong></p>
+            <p><small>Kalimantan</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Bromo</strong></p>
+            <p><small>Malang</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Malioboro</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <!-- home-popular-card -->
+        <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Merapi</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Teluk Bogam</strong></p>
+            <p><small>Kalimantan</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Bromo</strong></p>
+            <p><small>Malang</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Malioboro</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <!-- home-popular-card -->
+        <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Merapi</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Teluk Bogam</strong></p>
+            <p><small>Kalimantan</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Bromo</strong></p>
+            <p><small>Malang</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
+        <div class="card-body">
+            <p><strong>Malioboro</strong></p>
+            <p><small>Yogyakarta</small></p>
+        </div>
+    </div>
+
+</div>

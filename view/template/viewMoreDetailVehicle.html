@@ -13,73 +13,108 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-">
-            <a class="navbar-brand" href="#">
-                <img src="/src/images/dot.png" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">Vehicle Type</a>
-                    <a class="nav-item nav-link" href="#">History</a>
-                    <a class="nav-item nav-link" href="#">About</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/src/images/dot.png" width="30" height="30" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bi bi-list"></i>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">Vehicle Type</a>
+                        <a class="nav-item nav-link" href="#">History</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item">
+                            <button class="btn btn-sm btn-outline-warning btn-lg" type="button">Login</button>
+                        </a>
+                        <a class="nav-item">
+                            <button class="btn btn-sm btn-warning yellow-color btn-lg" type="button">Register</button>
+                        </a>
+                    </div>
                 </div>
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <button class="btn btn-sm btn-outline-warning" type="button">Main button</button>
-                        <button class="btn btn-sm btn-warning yellow-color" type="button">Smaller button</button>
-                    </form>
-                </nav>
             </div>
         </nav>
     </header>
+
 
     <main>
         <section>
             <div class="container-fluid vehicle-detail">
                 <div class="container-fluid">
-                    <button>Detail</button>
+                    <button type="button" class="btn btn-light btn-lg btn-block btn-detail">
+                        <i class="bi bi-chevron-left"></i>Detail
+                    </button>
                 </div>
 
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="/src/images/popular-one.png" class="img-thumbnail" alt="...">
+                <div class="container-fluid vehicle-detail">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg">
+                            <div class="vehicle-detail-container">
+                                <div class="grid-image">
+                                    <img src="/src/images/vehicle-detail.png" alt="detail-vehicle" class="img-fluid img-thumbnail rounded">
+                                </div>
+                                <div class="item2">
+                                    <button type="button" class="btn btn-light">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="item3">
+                                    <img src="/src/images/vehicle-detail.png" alt="detail-vehicle" class="img-thumbnail rounded vehicle-preview">
+                                </div>
+                                <div class="item4">
+                                    <img src="/src/images/vehicle-detail.png" alt="detail-vehicle" class="img-thumbnail rounded vehicle-preview">
+                                </div>
+                                <div class="item4">
+                                    <button type="button" class="btn btn-light">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6 col-md-6 col-lg">
                             <div class="card">
-                                <div class="card-body ">
-                                    <h1 class="display-5 ">Fixie Gray - Yogyakarta</h1>
-                                    <h4 class="card-subtitle mb-2 ">Available</h4>
-                                    <h4 class="card-subtitle mb-2 ">No prepayment</h4>
-                                    <p class="card-text ">Capacity : 1 Person</p>
-                                    <p class="card-text ">Type : Bike</p>
-                                    <p class="card-text ">Reservaton before 2 PM</p>
-                                    <div class="qty mt-5 ">
+                                <div class="card-body vehicle-info-wrapper">
+                                    <h1 class="display-5 vehicle-detail-title">Fixie Gray - Only</h1>
+                                    <h3 class="card-subtitle city">Yogyakarta</h3>
+                                    <h2 class="card-subtitle status-vehicle">Available</h2>
+                                    <h2 class="card-subtitle payment-info">No prepayment</h2>
+                                    <div class="vehicle-info-detail">
+                                        <p class="card-text">Capacity : 1 Person</p>
+                                        <p class="card-text">Type : Bike</p>
+                                        <p class="card-text">Reservaton before 2 PM</p>
+                                    </div>
+                                    <div class="price">
+                                        <h4>Rp. 128.000/day</h4>
+                                    </div>
+                                    <div class="qty mt-5">
                                         <div>
-                                            <span class="minus ">-</span>
-                                            <input type="number " class="count " name="qty " value="1 ">
-                                            <span class="plus ">+</span></div>
-                                        <div>
-                                            <h4>Rp. 128.000/day</h4>
+                                            <span class="minus">-</span>
+                                            <input type="number" class="count" name="qty" value="1">
+                                            <span class="plus">+</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="container-fluid ">
-                                <button type="button " class="btn btn-dark ">Dark</button>
-                                <button type="button " class="btn btn-warning ">Warning</button>
-                                <button type="button " class="btn btn-dark "><i class="bi bi-heart-fill " style="color: #FFCD61; "></i></button>
-                            </div>
-
                         </div>
                     </div>
                 </div>
-
+                <div class="container-fluid btn-detail-bottom">
+                    <div class="row">
+                        <div class="col-sm">
+                            <button type="button" class="btn btn-dark btn-lg btn-block btn-chatAdmin">Chat Admin</button>
+                        </div>
+                        <div class="col-sm">
+                            <button type="button" class="btn btn-warning btn-lg btn-block btn-reservation yellow-color">Reservation</button>
+                        </div>
+                        <div class="col-sm">
+                            <button type="button" class="btn btn-dark btn-liked"><i class="bi bi-heart-fill" style="color: #FFCD61; width:100%;"></i>Like</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -140,20 +175,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    <script>
-        $(document).ready(function() {
-            $('.count').prop('disabled', true);
-            $(document).on('click', '.plus', function() {
-                $('.count').val(parseInt($('.count').val()) + 1);
-            });
-            $(document).on('click', '.minus', function() {
-                $('.count').val(parseInt($('.count').val()) - 1);
-                if ($('.count').val() == 0) {
-                    $('.count').val(1);
-                }
-            });
-        });
-    </script>
+
 </body>
 
 </html>

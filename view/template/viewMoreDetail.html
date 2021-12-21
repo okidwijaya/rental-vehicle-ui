@@ -12,128 +12,77 @@
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-">
-            <a class="navbar-brand" href="#">
-                <img src="/src/images/dot.png" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">Vehicle Type</a>
-                    <a class="nav-item nav-link" href="#">History</a>
-                    <a class="nav-item nav-link" href="#">About</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/src/images/dot.png" width="30" height="30" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bi bi-list"></i>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">Vehicle Type</a>
+                        <a class="nav-item nav-link" href="#">History</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item">
+                            <button class="btn btn-sm btn-outline-warning btn-lg" type="button">Login</button>
+                        </a>
+                        <a class="nav-item">
+                            <button class="btn btn-sm btn-warning yellow-color btn-lg" type="button">Register</button>
+                        </a>
+                    </div>
                 </div>
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <button class="btn btn-sm btn-outline-warning" type="button">Main button</button>
-                        <button class="btn btn-sm btn-warning yellow-color" type="button">Smaller button</button>
-                    </form>
-                </nav>
             </div>
         </nav>
     </header>
 
     <main>
         <section>
-            <div class="popular-section-details">
-                <div class="container-fluid">
-                    <h1>Popular In Town</h1>
-                    <p>Click item to see details and reservation</p>
+            <div class="popular-section-view">
+                <h1>Popular In Town</h1>
+                <p>Click item to see details and reservation</p>
 
-                    <div class="container-fluid grid-details">
-
-                        <div class="card">
+                <div class="container-fluid view-popular">
+                    <div class="row">
+                        <div class="card col-sm-3 col-md-3 col-lg vehicle-card">
+                            <!-- home-popular-card -->
                             <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
                             <div class="card-body">
+                                <p><strong>Merapi</strong></p>
+                                <p><small>Yogyakarta</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-sm-3 col-md-3 col-lg vehicle-card">
                             <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
                             <div class="card-body">
+                                <p><strong>Teluk Bogam</strong></p>
+                                <p><small>Kalimantan</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-sm-3 col-md-3 col-lg vehicle-card">
                             <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
                             <div class="card-body">
+                                <p><strong>Bromo</strong></p>
+                                <p><small>Malang</small></p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card col-sm-3 col-md-3 col-lg vehicle-card">
                             <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
                             <div class="card-body">
+                                <p><strong>Malioboro</strong></p>
+                                <p><small>Yogyakarta</small></p>
                             </div>
                         </div>
-
-                        <div class="card">
-                            <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="/src/images/popular-one.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-two.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-three.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="/src/images/popular-four.png" class="card-img-top" alt="pop">
-                            <div class="card-body">
-                            </div>
-                        </div>
-
                     </div>
 
-                    <p>There is no vehicle left</p>
+
                 </div>
+
+                <p>There is no vehicle left</p>
             </div>
         </section>
     </main>
