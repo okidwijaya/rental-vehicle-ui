@@ -79,18 +79,16 @@ body {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
-    line-height: 85px;
+    font-size: 2.5em;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 6rem;
 }
 
 .title-header-sm {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 0.7em;
     color: #FFFFFF;
 }
 
@@ -99,13 +97,15 @@ body {
     box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
     font-family: Nunito;
     font-style: normal;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.5em;
+    line-height: auto;
     font-weight: bold;
     color: #FFCD61;
     width: 75%;
     height: 79px;
     border-radius: 10px;
+    text-align: center;
+    padding: auto;
 }
 
 .right {
@@ -120,7 +120,7 @@ body {
     width: 100%;
 }
 
-.form-group {
+.form-group-index {
     color: white;
     font-family: Nunito;
     font-style: normal;
@@ -131,19 +131,18 @@ body {
     width: 100%;
 }
 
-.form-group input {
+.form-group-index input {
     color: white;
     height: 79px;
     text-decoration: none;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.5em;
 }
 
 .forgot-password {
     font-family: Mulish;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 28px;
     text-decoration-line: underline;
     color: #FFFFFF;
@@ -151,11 +150,16 @@ body {
     /* padding-left: 40px; */
 }
 
-.form-control {
+.sign-form {
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.26);
     border-radius: 10px;
     height: 79px;
+}
+
+.sign-form::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1;
 }
 
 .yellow-color {
@@ -170,7 +174,7 @@ body {
     font-family: Nunito;
     font-style: normal;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 33px;
     color: #393939;
     margin: 15px auto;
@@ -191,13 +195,17 @@ body {
     font-family: Mulish;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 38px;
     color: #848484;
 }
 
-.col_first-foo {
+.first-foo {
     height: 233px;
+}
+
+.first-foo img {
+    margin-bottom: 10px;
 }
 
 .foo-info {
@@ -215,7 +223,7 @@ body {
     font-family: Mulish;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.18em;
     line-height: 60px;
     color: #393939;
     mix-blend-mode: normal;
@@ -227,7 +235,7 @@ body {
     font-family: Mulish;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 38px;
     color: #848484;
 }
@@ -260,269 +268,8 @@ footer {
     margin: auto 10px;
 }
 
-@media screen and (min-width:300px) and (max-width:779px) {
-    .relative-header {
-        height: 650px;
-        margin-bottom: 30px;
-    }
-    .img-fluid {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .bg-pass {
-        width: 100%;
-        height: 100%;
-    }
-    .main-child {
-        width: 100%;
-        height: auto;
-        padding: auto;
-        margin: 0;
-        top: 0;
-        left: 0;
-        align-items: center;
-        text-align: center;
-    }
-    .dot-svg {
-        height: auto;
-        min-width: 300px;
-        margin: auto;
-        padding: auto
-    }
-    .dot-svg img {
-        transform: rotate(90deg);
-        height: 100px;
-        width: 100%;
-        margin: auto;
-        padding: auto;
-    }
-    .wrapper {
-        width: 75%;
-        height: auto;
-        margin: 15px auto;
-    }
-    .sm-dev {
-        height: 650px;
-    }
-    .left {
-        min-width: 300px;
-        margin: auto;
-        height: auto;
-        padding: auto;
-    }
-    .btn {
-        font-size: 12px;
-        padding: 4px 6px;
-        margin-top: 10px;
-    }
-    .left h1 {
-        font-size: 32px;
-        line-height: 30px;
-        margin-bottom: 25px;
-    }
-    .left p {
-        font-size: 14px;
-        line-height: 23px;
-        margin-bottom: 0;
-    }
-    .btn-left {
-        font-size: 14px;
-        line-height: 0;
-        width: 200px;
-        height: 39px;
-    }
-    .right {
-        min-width: 300px;
-        height: auto;
-        margin: auto;
-    }
-    .right-signup {
-        min-width: 300px;
-        height: auto;
-        margin: auto;
-    }
-    .btn-right {
-        font-size: 14px;
-        line-height: 0;
-        width: 250px;
-        height: 39px;
-        /* margin-top: 5px; */
-    }
-    .form-group {
-        margin-bottom: 0;
-        height: auto;
-        width: 250px;
-        float: none;
-    }
-    .form-group input {
-        width: 250px;
-        height: 39px;
-        font-size: 12px;
-        line-height: 13px;
-    }
-    .forgot-password {
-        font-size: 12px;
-        line-height: 13px;
-        height: 15px;
-        width: 250px;
-        padding: auto;
-        margin: auto;
-        text-align: left;
-        align-items: left;
-        float: left;
-    }
-    .form-control {
-        margin: 7px auto;
-        height: 39px;
-    }
-    .btn-wrapper a {
-        margin-top: 0;
-    }
-    .btn-wrapper a img {
-        margin: 7px 10px;
-        width: 25px;
-    }
-    .information {
-        width: 90%;
-        height: auto;
-        font-size: 12px;
-        line-height: 12px;
-    }
-    .col-first-foo {
-        height: auto;
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
-    .foo-info {
-        margin-bottom: 20px;
-    }
-    .card-title {
-        font-size: 14px;
-        line-height: 10px;
-    }
-    .list-group-item {
-        padding: 5px;
-        font-size: 12px;
-        line-height: 10px;
-    }
-    .footer-bottom {
-        height: 12px;
-    }
-    .foo-listing {
-        margin: 5px auto;
-    }
-    .card-title img {
-        width: 22px;
-        height: 22px;
-    }
-}
 
-@media screen and (min-width:780px) and (max-width:1200px) {
-    .main-child {
-        height: 600px;
-        top: 20px;
-    }
-    .wrapper {
-        height: 450px;
-        margin: 0 auto;
-        padding: 25px auto;
-    }
-    .dot-svg img {
-        width: 35%;
-        height: 55%;
-        margin: 0;
-        padding: 0
-    }
-    .left {
-        margin: 0;
-        float: left;
-    }
-    .left h1 {
-        font-size: 38px;
-        line-height: 45px;
-        margin-bottom: 30px;
-    }
-    .left p {
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .btn-left {
-        font-size: 16px;
-        width: 85%;
-        height: 40px;
-        line-height: 10px;
-    }
-    .right {
-        margin-top: 20px;
-    }
-    .right-signup {
-        margin-top: 20px;
-    }
-    .form-group {
-        margin: auto;
-    }
-    .form-group input {
-        height: 49px;
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .forgot-password {
-        font-size: 12px;
-        line-height: 10px;
-        margin-bottom: 10px;
-    }
-    .btn-right {
-        margin: 5px auto;
-        height: 49px;
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .btn-wrapper a img {
-        margin: 12px 5px;
-        max-width: 5%;
-    }
-    /* footer */
-    .information {
-        width: 90%;
-        height: 390px;
-        font-size: 18px;
-        line-height: 38px;
-    }
-    .col_first-foo {
-        height: 233px;
-    }
-    .foo-info {
-        margin-bottom: 30px;
-    }
-    .card-title img {
-        width: 44px;
-        height: 42.9px;
-    }
-    .card-title {
-        font-size: 19px;
-        line-height: 60px;
-    }
-    .list-group-item {
-        font-size: 14px;
-        line-height: 28px;
-        color: #848484;
-    }
-    .footer-bottom {
-        width: 100%;
-        height: 80px;
-    }
-    .footer-bottom hr {
-        width: 75%;
-        margin: 10px auto;
-        height: 2px;
-    }
-    .footer-bottom i {
-        width: 0.5em;
-        height: 0.5em;
-        margin: auto 10px;
-    }
-}
+/* next page */
 
 .hr-home {
     width: 55px;
@@ -558,12 +305,13 @@ nav {
     /* btn margin nottom 789px */
 }
 
-.nav-item .btn-outline-warning {
+
+/* .nav-item .btn-outline-warning {
     color: black;
     width: 132px;
-}
+} */
 
-.nav-item .btn-warning {
+.nav-item .nav-home-btn {
     color: black;
     width: 132px;
 }
@@ -660,7 +408,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 1.1em;
     align-items: center;
     color: #FB8F1D;
     margin-top: 2%;
@@ -706,6 +454,52 @@ nav {
     margin: auto;
 }
 
+.testimonial-rate-image {
+    width: 384px;
+    height: 491px;
+    position: relative;
+    padding: 0;
+    margin: auto;
+}
+
+.xplus {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 42px;
+    height: 42px;
+}
+
+.bg-circle {
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    width: 42px;
+    height: 42px;
+}
+
+.testimonial-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 132px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 16px 0px 0px 0px;
+    margin: auto;
+}
+
+.testimonial-button .btn {
+    border: none;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial-icon {
+    width: 1em;
+}
+
 .card-img-top {
     width: 261px;
     border-radius: 8px;
@@ -713,30 +507,61 @@ nav {
     object-fit: cover;
 }
 
-.testimonial {
-    height: auto;
-    width: 70%;
-    overflow-y: none;
-    margin: 25px auto 100px auto;
-    padding: auto;
+.home-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: left;
+    color: #000000;
 }
 
-.testimonial row {
+.home-bottom-content {
+    width: 100%;
+    height: auto;
+    margin: 50 auto;
+}
+
+.testimonial {
+    height: auto;
+    width: 100%;
+    overflow-y: none;
+    margin: 50px auto 100px auto;
+    padding: auto;
+    position: relative;
+}
+
+.testimonial h1 {
+    width: 70%;
+    margin: auto auto 25px auto;
+}
+
+.testimonial-row-wrapper {
+    width: 70%;
     margin: auto;
-    width: 80%;
+}
+
+.sm-xplus {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
 }
 
 .testimonial-rate-info {
-    margin: 124px auto 50px auto;
+    margin: auto;
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 36px;
     color: #393939;
 }
 
 .testimonial-picture {
+    /* width: 384px;
+    height: 491px; */
     width: 384px;
     height: 491px;
     border-radius: 8px;
@@ -759,7 +584,7 @@ nav {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3em;
     color: #000000;
 }
 
@@ -839,7 +664,7 @@ nav {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 3em;
     align-items: center;
     color: #042521;
 }
@@ -853,7 +678,7 @@ nav {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 2.2em;
     align-items: center;
     color: #393939;
     margin: 10px auto;
@@ -864,7 +689,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5em;
     align-items: center;
     color: #087E0D;
 }
@@ -873,7 +698,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5em;
     align-items: center;
     color: #9B0A0A;
 }
@@ -882,7 +707,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5em;
     align-items: center;
     color: #393939;
 }
@@ -896,7 +721,7 @@ nav {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 2.2em;
     text-align: right;
     color: #000000;
 }
@@ -909,7 +734,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.2em;
     align-items: center;
 }
 
@@ -918,7 +743,7 @@ nav {
     box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
     font-family: Nunito;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #FFCD61;
     width: 100%;
@@ -934,7 +759,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 33px;
     color: #393939;
     margin: 10px auto;
@@ -946,7 +771,7 @@ nav {
     box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
     font-family: Nunito;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #FFCD61;
     width: 50%;
@@ -987,7 +812,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.8em;
     align-items: center;
     text-align: center;
     color: #B8BECD;
@@ -1002,14 +827,18 @@ nav {
 }
 
 .profile-input {
-    border-bottom: 1px solid black;
-    height: 70px;
     margin-right: 20px;
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.8em;
+    height: auto;
     color: #9F9F9F;
+    border-bottom: 1px solid black;
+}
+
+.profile-input input {
+    border: none;
 }
 
 .profile-save {
@@ -1017,7 +846,7 @@ nav {
     box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
     font-family: Nunito;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #FFCD61;
     width: 100%;
@@ -1033,7 +862,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 33px;
     color: #393939;
     margin: 10px auto;
@@ -1045,7 +874,7 @@ nav {
     box-shadow: 0px 0px 20px rgba(218, 218, 218, 0.25);
     font-family: Nunito;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     background: rgba(203, 203, 212, 0.27);
     width: 50%;
@@ -1062,7 +891,7 @@ nav {
     font-family: Nunito;
     font-style: normal;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #4F5665;
 }
 
@@ -1080,7 +909,7 @@ nav {
 .qty .count {
     color: #000;
     display: inline-block;
-    font-size: 25px;
+    font-size: 1.6em;
     font-weight: 700;
     padding: 0 2px;
     width: 75px;
@@ -1093,7 +922,7 @@ nav {
     color: black;
     width: 70px;
     height: 70px;
-    font: 30px/1 Arial, sans-serif;
+    font: 1.8em/1 Arial, sans-serif;
     text-align: center;
     border-radius: 10px;
 }
@@ -1104,7 +933,7 @@ nav {
     color: black;
     width: 70px;
     height: 70px;
-    font: 30px/1 Arial, sans-serif;
+    font: 1.8em/1 Arial, sans-serif;
     text-align: center;
     border-radius: 10px;
     background-clip: padding-box;
@@ -1127,49 +956,279 @@ nav {
 }
 
 
-/* .container-fluid input {
-    border: none;
-    width: 2%;
-} */
+/* home */
 
-
-/* input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.profile-btn-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-input:disabled {
-    background-color: white;
-} */
-
-
-/* .popular-section-details {
-    height: 10px auto;
-    padding: 10px 30px;
-    width: 85%;
-    margin: 25px auto 150px auto;
-} */
-
-
-/* .grid-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(4, 380px);
-    column-gap: 10px;
-    justify-items: center;
-    row-gap: 25px;
-    margin: 50px auto 100px auto;
-} */
-
-
-/* .grid-card {
-    width: 225px;
-    height: 360px;
+@media only screen and (min-width:300px) and (max-width:786px) {
+    .relative-header {
+        height: 650px;
+        margin-bottom: 30px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bg-pass {
+        width: 100%;
+        height: 100%;
+    }
+    .main-child {
+        width: 100%;
+        height: auto;
+        padding: auto;
+        margin: 0;
+        top: 0;
+        left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .dot-svg {
+        height: 168px;
+        min-width: 300px;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dot-svg img {
+        /* transform: rotate(90deg); */
+        height: 100px;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .wrapper {
+        width: 75%;
+        height: auto;
+        margin: 15px auto;
+    }
+    .sm-dev {
+        height: 650px;
+    }
+    .left {
+        min-width: 300px;
+        margin: auto;
+        height: auto;
+        padding: auto;
+    }
+    .btn {
+        font-size: 0.7em;
+        padding: auto;
+        margin-top: 10px;
+    }
+    .left h1 {
+        font-size: 1.9em;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    .left p {
+        font-size: 0.8em;
+        line-height: 23px;
+        margin-bottom: 0;
+    }
+    .btn-left {
+        font-size: 0.8em;
+        padding: auto;
+        width: 200px;
+        height: 39px;
+    }
+    .right {
+        min-width: 300px;
+        height: auto;
+        margin: auto;
+    }
+    .right-signup {
+        min-width: 300px;
+        height: auto;
+        margin: auto;
+    }
+    .btn-right {
+        font-size: 0.8em;
+        line-height: 0;
+        width: 250px;
+        height: 39px;
+        /* margin-top: 5px; */
+    }
+    .form-group-index {
+        margin-bottom: 0;
+        height: auto;
+        width: 250px;
+        float: none;
+    }
+    .form-group-index input {
+        width: 250px;
+        height: 39px;
+        font-size: 0.7em;
+        line-height: 13px;
+    }
+    .forgot-password {
+        font-size: 0.7em;
+        line-height: 13px;
+        height: 15px;
+        width: 250px;
+        padding: auto;
+        margin: auto;
+        text-align: left;
+        align-items: left;
+        float: left;
+    }
+    /* sign-form / form-control */
+    .sign-form {
+        margin: 7px auto;
+        height: 39px;
+    }
+    .btn-wrapper a {
+        margin-top: 0;
+    }
+    .btn-wrapper a img {
+        margin: 7px 10px;
+        width: 25px;
+    }
+    .information {
+        width: 90%;
+        height: auto;
+        font-size: 0.7em;
+        line-height: 12px;
+    }
+    .col-first-foo {
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .foo-info {
+        margin-bottom: 20px;
+    }
+    .card-title {
+        font-size: 0.8em;
+        line-height: 10px;
+    }
+    .list-group-item {
+        padding: 5px;
+        font-size: 0.7em;
+        line-height: 10px;
+    }
+    .footer-bottom {
+        height: 12px;
+    }
+    .foo-listing {
+        margin: 5px auto;
+    }
+    .card-title img {
+        width: 22px;
+        height: 22px;
+    }
 }
 
-.grid-card img {
-    width: 241px;
-    height: 332px;
-    object-fit: contain;
-} */
+@media only screen and (min-width:787px) and (max-width:1024px) {
+    .main-child {
+        height: 600px;
+        top: 20px;
+    }
+    .wrapper {
+        height: 450px;
+        margin: 0 auto;
+        padding: 25px auto;
+    }
+    .dot-svg img {
+        width: 35%;
+        height: 55%;
+        margin: 0;
+        padding: 0;
+        align-items: none;
+    }
+    .left {
+        margin: 0;
+        float: left;
+    }
+    .left h1 {
+        font-size: 2.3em;
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+    .left p {
+        font-size: 0.8em;
+        line-height: 1.125em;
+    }
+    .btn-left {
+        font-size: 1em;
+        width: 85%;
+        height: 40px;
+        line-height: auto;
+    }
+    .right {
+        margin-top: 20px;
+    }
+    .right-signup {
+        margin-top: 20px;
+    }
+    .form-group-index {
+        margin: auto;
+    }
+    .form-group-index input {
+        height: 49px;
+        font-size: 1.125em;
+        line-height: 1.2em;
+    }
+    .forgot-password {
+        font-size: 0.7em;
+        line-height: 10px;
+        margin-bottom: 10px;
+    }
+    .btn-right {
+        margin: 5px auto;
+        height: 49px;
+        font-size: 1.125em;
+        line-height: 1.2em;
+    }
+    .btn-wrapper a img {
+        margin: 12px 5px;
+        max-width: 5%;
+    }
+    /* footer */
+    .information {
+        width: 90%;
+        height: 390px;
+        font-size: 1.125em;
+        line-height: 38px;
+    }
+    .col_first-foo {
+        height: 233px;
+    }
+    .foo-info {
+        margin-bottom: 30px;
+    }
+    .card-title img {
+        width: 44px;
+        height: 42.9px;
+    }
+    .card-title {
+        font-size: 1.18em;
+        line-height: 60px;
+    }
+    .list-group-item {
+        font-size: 0.8em;
+        line-height: 28px;
+        color: #848484;
+    }
+    .footer-bottom {
+        width: 100%;
+        height: 80px;
+    }
+    .footer-bottom hr {
+        width: 75%;
+        margin: 10px auto;
+        height: 2px;
+    }
+    .footer-bottom i {
+        width: 0.5em;
+        height: 0.5em;
+        margin: auto 10px;
+    }
+}

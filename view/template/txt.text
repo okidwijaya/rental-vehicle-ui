@@ -1,4 +1,53 @@
 
+320 and max  786 terus yg kedua  max  1024 yang ketiga max 1200,
+
+////////////////////////////////////////////////////////////////
+/* .container-fluid input {
+    border: none;
+    width: 2%;
+} */
+
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:disabled {
+    background-color: white;
+} */
+
+
+/* .popular-section-details {
+    height: 10px auto;
+    padding: 10px 30px;
+    width: 85%;
+    margin: 25px auto 150px auto;
+} */
+
+
+/* .grid-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(4, 380px);
+    column-gap: 10px;
+    justify-items: center;
+    row-gap: 25px;
+    margin: 50px auto 100px auto;
+} */
+
+
+/* .grid-card {
+    width: 225px;
+    height: 360px;
+}
+
+.grid-card img {
+    width: 241px;
+    height: 332px;
+    object-fit: contain;
+} */
 
 ////////////////////////////////////
 /// detail cxards

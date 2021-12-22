@@ -20,42 +20,40 @@
     </header>
 
     <main class="main-child">
-        <div class="container-fluid">
-            <div class="row justify-content-center wrapper">
-                <!-- justify-content-md-center align-items-center -->
-                <div class="col-4 col-sm col-md col-lg left title-header-lg">
-                    <h1>Let's Explore <br>The World</h1>
-                    <p class="title-header-sm">Don't have an account ?</p>
-                    <button type="button" class="btn btn-lg btn-block btn-left">Sign Up</button>
-                </div>
-                <div class="col-1 col-md-1 dot-svg">
-                    <img src="/src/images/dot.svg" alt="dotSvg">
-                </div>
 
-                <div class="col-4 col-sm col-md col-lg right">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-md" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <input type="password" class="form-control form-control-md" id="InputPassword1" placeholder="Password">
-                            <a class="forgot-password" href="#">Forgot password?</a>
-                        </div>
-                        <button type="submit " class="btn btn-warning btn-md btn-block btn-right yellow-color ">Login</button>
-                        <div class="btn-wrapper ">
-                            <a class="btn btn-light btn-md btn-block btn-right" href="# ">
-                                <img src="/src/images/btn-google.png">Login Using Google</a>
-                        </div>
-                    </form>
-                </div>
+        <div class="row justify-content-center wrapper">
+            <!-- justify-content-md-center align-items-center -->
+            <div class="col-4 col-sm col-md col-lg left title-header-lg">
+                <h1>Let's Explore <br>The World</h1>
+                <p class="title-header-sm">Don't have an account ?</p>
+                <button type="button" onclick="location.href='signup.html'" class="btn btn-lg btn-block btn-left">Sign Up</button>
+            </div>
+            <div class="col-1 col-md-1 dot-svg">
+                <img src="/src/images/dot.svg" alt="dotSvg">
+            </div>
+
+            <div class="col-4 col-sm col-md col-lg right">
+                <form>
+                    <div class="form-group form-group-index">
+                        <input type="email" class="form-control form-control-md sign-form" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="password" class="form-control form-control-md sign-form" id="inputPassword" placeholder="Password">
+                        <a class="forgot-password" href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" onclick="location.href='home.html'" class="btn btn-warning btn-md btn-block btn-right yellow-color">Login</button>
+                    <div class="btn-wrapper ">
+                        <a class="btn btn-light btn-md btn-block btn-right" href="/home.html">
+                            <img src="/src/images/btn-google.png">Login Using Google</a>
+                    </div>
+                </form>
             </div>
         </div>
+
     </main>
     <footer>
         <div class="container-fluid information ">
             <div class="row ">
-                <div class="col-5 col-first-foo ">
-                    <h5 class="card-title ">
-                        <img src="/src/images/dot.png " alt=" ">
-                    </h5>
+                <div class="col-5 first-foo ">
+                    <img src="/src/images/dot.png " alt="footer-logo">
                     <p class="foo-info ">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
                     <p class="copyright "><span>&#169;</span>2020 Vehicle Rental Center. All rights reserved</p>
                 </div>
