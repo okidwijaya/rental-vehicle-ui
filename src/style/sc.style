@@ -1,0 +1,345 @@
+@media only screen and (max-width:560px) {
+    .title-header-lg {
+        font-size: 1.3rem;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .relative-header {
+        height: 650px;
+        margin-bottom: 30px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .bg-pass {
+        width: 100%;
+        height: 100%;
+    }
+    .main-child {
+        width: 100%;
+        height: auto;
+        padding: auto;
+        margin: 0;
+        top: 0;
+        left: 0;
+        padding-top: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .dot-svg-signup img {
+        display: none;
+    }
+    .dot-svg-signup {
+        height: 50px;
+        width: 134px;
+        margin: auto auto 20px auto;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.692);
+    }
+    .dot-svg {
+        height: 130px;
+        min-width: 300px;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dot-svg img {
+        transform: rotate(90deg);
+        height: 100px;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .wrapper {
+        width: 75%;
+        height: auto;
+        margin: 15px auto;
+    }
+    .sm-dev {
+        height: 650px;
+    }
+    .left {
+        min-width: 300px;
+        margin: auto;
+        height: auto;
+        padding: auto;
+    }
+    .title-header-lg {
+        font-size: 2rem;
+    }
+    .title-header-sm {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .btn {
+        font-size: 0.7rem;
+        padding: auto;
+        margin-top: 10px;
+    }
+    .btn-left {
+        font-size: 0.8rem;
+        padding: auto;
+        width: 200px;
+        height: 39px;
+        margin: 0 auto;
+    }
+    .right {
+        min-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .right-signup {
+        min-width: 300px;
+        height: auto;
+        margin: auto;
+    }
+    .btn-right {
+        font-size: 0.8rem;
+        line-height: 0;
+        width: 250px;
+        height: 39px;
+        /* margin-top: 5px; */
+    }
+    .form-group-index {
+        margin-bottom: 0;
+        height: auto;
+        width: 250px;
+        float: none;
+    }
+    .form-group-index input {
+        width: 250px;
+        height: 39px;
+        font-size: 0.7rem;
+        line-height: 13px;
+    }
+    .forgot-password {
+        font-size: 0.8em;
+        width: 250px;
+        padding: auto;
+        margin: auto;
+        text-align: left;
+        align-items: left;
+        float: left;
+    }
+    /* sign-form / form-control */
+    .sign-form {
+        margin: 7px auto;
+        height: 39px;
+    }
+    .btn-wrapper a {
+        margin-top: 0;
+    }
+    .btn-wrapper a img {
+        margin: 7px 10px;
+        width: 25px;
+    }
+    .information {
+        width: 80%;
+        height: auto;
+        font-size: 0.8rem;
+    }
+    .first-foo {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 100%;
+        font-size: 0.8rem;
+        padding-bottom: 0;
+    }
+    .foo-list {
+        font-size: 0.8rem;
+        height: auto;
+    }
+    .foo-info {
+        margin-bottom: 20px;
+    }
+    .foo-list {
+        height: 200px;
+        margin-top: 15px;
+    }
+    .list-group-item {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+    .footer-bottom {
+        width: 100%;
+        height: 80px;
+    }
+    .footer-bottom hr {
+        width: 75%;
+        margin: 10px auto;
+        height: 2px;
+        bottom: 0;
+    }
+    .footer-bottom i {
+        width: 0.5em;
+        height: 0.5em;
+        margin: auto 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .title-header-lg {
+        font-size: 2.6rem;
+        line-height: 85px;
+        margin-bottom: 85px;
+    }
+    .title-header-sm {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .main-child {
+        top: 20px;
+    }
+    .wrapper {
+        height: 450px;
+        margin: 0 auto;
+        padding: 25px auto;
+    }
+    .dot-svg-signup img {
+        display: none;
+    }
+    .dot-svg img {
+        width: 35%;
+        height: 62%;
+        margin: 0;
+        padding: 0;
+        align-items: none;
+    }
+    .left {
+        margin: 0;
+        float: left;
+    }
+    .btn-left {
+        font-size: 1.2rem;
+        width: 85%;
+        height: 49px;
+        line-height: auto;
+    }
+    .right-signup {
+        margin: 10px auto;
+    }
+    .right {
+        margin-top: 10px;
+    }
+    .form-group-index {
+        margin: auto;
+    }
+    .form-group-index input {
+        height: 49px;
+        font-size: 1.1rem;
+        line-height: 1.2em;
+    }
+    .forgot-password {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    .btn-right {
+        margin: 5px auto;
+        height: 49px;
+        font-size: 1.125rem;
+        line-height: 1.2em;
+    }
+    .btn-wrapper a img {
+        margin: 12px 5px;
+        max-width: 5%;
+    }
+    .information {
+        width: 90%;
+        height: auto;
+        line-height: 38px;
+    }
+    .first-foo {
+        margin-bottom: 1rem;
+    }
+    .foo-info {
+        margin-bottom: 30px;
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+    .card-title img {
+        width: 44px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .list-group-item {
+        font-size: 0.8rem;
+        color: #848484;
+    }
+    .footer-bottom {
+        width: 100%;
+        height: 80px;
+    }
+    .footer-bottom hr {
+        width: 75%;
+        margin: 10px auto;
+        height: 2px;
+    }
+    .footer-bottom i {
+        width: 0.5em;
+        height: 0.5em;
+        margin: auto 10px;
+    }
+}
+
+@media only screen and (max-width:1024px) {}
+
+
+   /* btn count */
+
+.qty .count {
+    color: #000;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 2px;
+    width: 75px;
+    text-align: center;
+}
+
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    width: 70px;
+    height: 70px;
+    font: 1.8em/1 Arial, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    width: 70px;
+    height: 70px;
+    font: 1.8em/1 Arial, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+.qty {
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.minus:hover {
+    background-color: #f3f3f3 !important;
+}
+
+.plus:hover {
+    background-color: #FFCD61 !important;
+}          

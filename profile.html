@@ -28,12 +28,12 @@
                         <a class="nav-item nav-link" href="#">History</a>
                         <a class="nav-item nav-link" href="#">About</a>
                         <a class="nav-item">
-                            <button class="btn btn-sm btn-outline-warning" type="button">
+                            <button class="btn btn-sm btn-outline-warning btn-message-profile" type="button">
                                 <i class="bi bi-envelope"></i>
                             </button>
                         </a>
                         <a class="nav-item">
-                            <button type="button" class="btn btn-light btn-circle btn-sm">
+                            <button type="button" class="btn btn-light btn-circle btn-sm profile-btn-picture">
                                 <img src="/src/images/edward.png" class="profile-btn-image" alt="profile-thumbnail">
                             </button>
                         </a>
@@ -49,25 +49,27 @@
                 <div class="container-fluid">
 
                     <div class="card profile-card">
-                        <img src="/src/images/edward.png" class="card-img-top img-thumbnail profile-pic" alt="profile-photo">
-                        <div class="card-body">
+                        <div class="container-fluid profile-picture">
+                            <img src="/src/images/edward.png" class="card-img-top img-thumbnail profile-pic" alt="profile-photo">
                             <button class="btn btn-primary btn-edit-profile"><i class="bi bi-pencil"></i></button>
+                        </div>
+                        <div class="card-body">
                             <h1 class="display-6">Andrew</h1>
                             <p class="card-text text-muted profile-text email">samanthadoe@mail.com </p>
                             <p class="card-text text-muted profile-text phone-number">+62833467823</p>
                             <p class="card-text text-muted profile-text start-date">Has been active since 2013</p>
                         </div>
-                        <div class="container radio-btn-profile">
-                            <div class="form-check form-check-inline">
+                        <div class="container radio-btn-profile radio-yellow">
+                            <div class="form-check form-check-inline radio-btn-styling">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
-                                    1
+                                    Female
                                 </label>
                             </div>
-                            <div class="form-check form-check-inline">
+                            <div class="form-check form-check-inline radio-btn-styling">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                                 <label class="form-check-label" for="flexRadioDefault2">
-                                2
+                                Male
                                 </label>
                             </div>
                         </div>
@@ -75,7 +77,7 @@
 
                 </div>
 
-                <div class="container-fluid">
+                <div class="container-fluid profile-wrapper">
                     <form>
                         <h1 class="profile-title-heading">Contacs</h1>
                         <div class="mb-3 profile-input">
@@ -92,12 +94,12 @@
                         </div>
 
                         <h1 class="profile-title-heading">Identify</h1>
-                        <div class="row g-3 align-items-center">
-                            <div class="col-auto profile-input">
+                        <div class="row g-lg-3 align-items-center identify-input">
+                            <div class="col-auto col-md-5 profile-input profile-input-Identify">
                                 <label for="inputUserName" class="form-label">display name :</label>
                                 <input type="text" class="form-control" id="inputUserName" placeholder="username">
                             </div>
-                            <div class="col-auto profile-input">
+                            <div class="col-auto col-md-5 profile-input profile-input-Identify">
                                 <label for="dob" class="form-label">DD/MM/YY :</label>
                                 <input type="date" class="form-control" id="dob">
                             </div>
@@ -105,7 +107,7 @@
                     </form>
 
                     <div class="container-fluid btn-profile-bottom">
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-sm">
                                 <button type="button" class="btn btn-dark btn-lg btn-block profile-save">Save Changes</button>
                             </div>
@@ -125,41 +127,41 @@
     </main>
 
     <footer>
-        <div class="container-fluid information ">
-            <div class="row ">
-                <div class="col-5 first-foo ">
-                    <img src="/src/images/dot.png " alt="footer-logo">
-                    <p class="foo-info ">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
+        <div class="container-fluid information">
+            <div class="row">
+                <div class="col-4 first-foo">
+                    <img src="/src/images/dot.png" alt="footer-logo">
+                    <p class="foo-info">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
                     <p class="copyright "><span>&#169;</span>2020 Vehicle Rental Center. All rights reserved</p>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Destination</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bali</li>
-                        <li class="list-group-item ">Yogyakarta</li>
-                        <li class="list-group-item ">Jakarta</li>
-                        <li class="list-group-item ">Kalimantan</li>
-                        <li class="list-group-item ">Malang</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Destination</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bali</li>
+                        <li class="list-group-item">Yogyakarta</li>
+                        <li class="list-group-item">Jakarta</li>
+                        <li class="list-group-item">Kalimantan</li>
+                        <li class="list-group-item">Malang</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Vehicle</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bike</li>
-                        <li class="list-group-item ">Cars</li>
-                        <li class="list-group-item ">Motorbike</li>
-                        <li class="list-group-item ">Return Times</li>
-                        <li class="list-group-item ">FAQs</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Vehicle</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bike</li>
+                        <li class="list-group-item">Cars</li>
+                        <li class="list-group-item">Motorbike</li>
+                        <li class="list-group-item">Return Times</li>
+                        <li class="list-group-item">FAQs</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Interest</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Adventure Travel</li>
-                        <li class="list-group-item ">Art And Culture</li>
-                        <li class="list-group-item "> Wildlife And Nature</li>
-                        <li class="list-group-item ">Family Holidays</li>
-                        <li class="list-group-item ">Culinary Trip</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Interest</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Adventure Travel</li>
+                        <li class="list-group-item">Art And Culture</li>
+                        <li class="list-group-item"> Wildlife And Nature</li>
+                        <li class="list-group-item">Family Holidays</li>
+                        <li class="list-group-item">Culinary Trip</li>
                     </ul>
                 </div>
             </div>

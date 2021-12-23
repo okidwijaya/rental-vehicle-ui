@@ -20,74 +20,75 @@
     </header>
 
     <main class="main-child">
-        <div class="container-fluid">
-            <div class="row justify-content-center wrapper">
-                <!-- justify-content-md-center align-items-center -->
-                <div class="col-4 col-sm col-md col-lg left title-header-lg">
-                    <h1>Let's Explore <br>The World</h1>
-                    <p class="title-header-sm">Don't have an account ?</p>
-                    <button type="button" onclick="location.href = 'index.html'" class="btn btn-lg btn-block btn-left">Sign In</button>
-                </div>
-                <div class="col-1 col-md-1 dot-svg">
-                    <img src="/src/images/dot.svg" alt="dotSvg">
-                </div>
 
-                <div class="col-4 col-sm col-md col-lg right-signup">
-                    <form>
-                        <div class="form-group form-group-index">
-                            <input type="username" class="form-control form-control-md sign-form" id="inputUsername" placeholder="Username">
-                            <input type="email" class="form-control form-control-md sign-form" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                            <input type="password" class="form-control form-control-md sign-form" id="inputPassword" placeholder="Password">
-                            <a class="forgot-password" href="#">Forgot password?</a>
-                        </div>
-                        <button type="submit" onclick="location.href = 'index.html'" class="btn btn-warning btn-md btn-block btn-right yellow-color">Signup</button>
-                        <div class="btn-wrapper">
-                            <a class="btn btn-light btn-md btn-block btn-right" href="/index.html">
-                                <img src="/src/images/btn-google.png">Signup Using Google</a>
-                        </div>
-                    </form>
-                </div>
+        <div class="row justify-content-center wrapper">
+            <!-- justify-content-md-center align-items-center -->
+            <div class="col-4 col-sm col-md col-lg left">
+                <h1 class="title-header-lg">Let's Explore <br>The World</h1>
+                <p class="title-header-sm">Don't have an account ?</p>
+                <button type="button" onclick="location.href='index.html'" class="btn btn-lg btn-block btn-left">Sign Up</button>
+            </div>
+
+            <div class="col-1 col-md-1 dot-svg">
+                <img src="/src/images/dot.svg" alt="dotSvg">
+            </div>
+
+            <div class="col-4 col-sm col-md col-lg right">
+                <form>
+                    <div class="form-group form-group-index">
+                        <input type="username" class="form-control form-control-md sign-form" id="inputUsername" placeholder="Username">
+                        <input type="email" class="form-control form-control-md sign-form" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <input type="password" class="form-control form-control-md sign-form" id="inputPassword" placeholder="Password">
+                        <a class="forgot-password" href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" onclick="location.href = 'index.html'" class="btn btn-warning btn-md btn-block btn-right yellow-color">Signup</button>
+                    <div class="btn-wrapper">
+                        <a class="btn btn-light btn-md btn-block btn-right" href="/index.html">
+                            <img src="/src/images/btn-google.png">Signup Using Google</a>
+                    </div>
+                </form>
             </div>
         </div>
+
     </main>
 
 
     <footer>
-        <div class="container-fluid information ">
-            <div class="row ">
-                <div class="col-5 first-foo ">
-                    <img src="/src/images/dot.png " alt="footer-logo">
-                    <p class="foo-info ">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
+        <div class="container-fluid information">
+            <div class="row">
+                <div class="col-4 first-foo">
+                    <img src="/src/images/dot.png" alt="footer-logo">
+                    <p class="foo-info">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
                     <p class="copyright "><span>&#169;</span>2020 Vehicle Rental Center. All rights reserved</p>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Destination</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bali</li>
-                        <li class="list-group-item ">Yogyakarta</li>
-                        <li class="list-group-item ">Jakarta</li>
-                        <li class="list-group-item ">Kalimantan</li>
-                        <li class="list-group-item ">Malang</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Destination</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bali</li>
+                        <li class="list-group-item">Yogyakarta</li>
+                        <li class="list-group-item">Jakarta</li>
+                        <li class="list-group-item">Kalimantan</li>
+                        <li class="list-group-item">Malang</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Vehicle</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bike</li>
-                        <li class="list-group-item ">Cars</li>
-                        <li class="list-group-item ">Motorbike</li>
-                        <li class="list-group-item ">Return Times</li>
-                        <li class="list-group-item ">FAQs</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Vehicle</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bike</li>
+                        <li class="list-group-item">Cars</li>
+                        <li class="list-group-item">Motorbike</li>
+                        <li class="list-group-item">Return Times</li>
+                        <li class="list-group-item">FAQs</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Interest</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Adventure Travel</li>
-                        <li class="list-group-item ">Art And Culture</li>
-                        <li class="list-group-item "> Wildlife And Nature</li>
-                        <li class="list-group-item ">Family Holidays</li>
-                        <li class="list-group-item ">Culinary Trip</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Interest</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Adventure Travel</li>
+                        <li class="list-group-item">Art And Culture</li>
+                        <li class="list-group-item"> Wildlife And Nature</li>
+                        <li class="list-group-item">Family Holidays</li>
+                        <li class="list-group-item">Culinary Trip</li>
                     </ul>
                 </div>
             </div>

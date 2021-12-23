@@ -28,12 +28,12 @@
                         <a class="nav-item nav-link" href="#">History</a>
                         <a class="nav-item nav-link" href="#">About</a>
                         <a class="nav-item">
-                            <button class="btn btn-sm btn-outline-warning" type="button">
+                            <button class="btn btn-sm btn-outline-warning btn-message-profile" type="button">
                                 <i class="bi bi-envelope"></i>
                             </button>
                         </a>
                         <a class="nav-item">
-                            <button type="button" class="btn btn-light btn-circle btn-sm">
+                            <button type="button" class="btn btn-light btn-circle btn-sm profile-btn-picture">
                                 <img src="/src/images/edward.png" class="profile-btn-image" alt="profile-thumbnail">
                             </button>
                         </a>
@@ -42,7 +42,6 @@
             </div>
         </nav>
     </header>
-
 
     <main>
         <section>
@@ -55,7 +54,7 @@
 
                 <div class="container-fluid vehicle-detail">
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-6 col-lg">
+                        <div class="col-sm-6 col-md-12 col-lg">
                             <div class="vehicle-detail-container">
                                 <div class="grid-image">
                                     <img src="/src/images/vehicle-detail.png" alt="detail-vehicle" class="img-fluid img-thumbnail rounded">
@@ -78,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg">
+                        <div class="col-sm-6 col-md-12 col-lg">
                             <div class="card">
                                 <div class="card-body vehicle-info-wrapper">
                                     <h1 class="display-5 vehicle-detail-title">Fixie Gray - Only</h1>
@@ -93,12 +92,13 @@
                                     <div class="price">
                                         <h4>Rp. 128.000/day</h4>
                                     </div>
-                                    <div class="qty mt-5">
-                                        <div>
-                                            <span class="minus">-</span>
-                                            <input type="number" class="count" name="qty" value="1">
-                                            <span class="plus">+</span>
+                                    <div class="container-fluid d-flex justify-content-center qty-box">
+                                        <button type="button" class="btn btn-warning plus-qty">+</button>
+                                        <div class="form-group">
+                                            <textarea class="form-control text-qty" id="exampleFormControlTextarea1">sca</textarea>
                                         </div>
+                                        <!-- <input type="text" name="qty" class="form-control input-number" value="1" min="1" max="10"> -->
+                                        <button type="button" class="btn btn-light min-qty">-</button>
                                     </div>
                                 </div>
                             </div>
@@ -107,15 +107,15 @@
                     </div>
                 </div>
                 <div class="container-fluid btn-detail-bottom">
-                    <div class="row">
-                        <div class="col-sm">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
                             <button type="button" class="btn btn-dark btn-lg btn-block btn-chatAdmin">Chat Admin</button>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-sm-4">
                             <button type="button" class="btn btn-warning btn-lg btn-block btn-reservation yellow-color">Reservation</button>
                         </div>
-                        <div class="col-sm">
-                            <button type="button" class="btn btn-dark btn-liked"><i class="bi bi-heart-fill" style="color: #FFCD61; width:100%;"></i>Like</button>
+                        <div class="col-sm-2">
+                            <button type="button" class="btn btn-dark btn-lg btn-liked"><i class="bi bi-heart-fill" style="color: #FFCD61; width:100%;"></i>Like</button>
                         </div>
                     </div>
                 </div>
@@ -124,41 +124,41 @@
     </main>
 
     <footer>
-        <div class="container-fluid information ">
-            <div class="row ">
-                <div class="col-5 first-foo ">
-                    <img src="/src/images/dot.png " alt="footer-logo">
-                    <p class="foo-info ">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
+        <div class="container-fluid information">
+            <div class="row">
+                <div class="col-4 first-foo">
+                    <img src="/src/images/dot.png" alt="footer-logo">
+                    <p class="foo-info">Plan and book your perfect trip with expert advice, travel tips for vehicle information from us</p>
                     <p class="copyright "><span>&#169;</span>2020 Vehicle Rental Center. All rights reserved</p>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Destination</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bali</li>
-                        <li class="list-group-item ">Yogyakarta</li>
-                        <li class="list-group-item ">Jakarta</li>
-                        <li class="list-group-item ">Kalimantan</li>
-                        <li class="list-group-item ">Malang</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Destination</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bali</li>
+                        <li class="list-group-item">Yogyakarta</li>
+                        <li class="list-group-item">Jakarta</li>
+                        <li class="list-group-item">Kalimantan</li>
+                        <li class="list-group-item">Malang</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Vehicle</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Bike</li>
-                        <li class="list-group-item ">Cars</li>
-                        <li class="list-group-item ">Motorbike</li>
-                        <li class="list-group-item ">Return Times</li>
-                        <li class="list-group-item ">FAQs</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Vehicle</h5>
+                    <ul class="list-group list-group-sm">
+                        <li class="list-group-item">Bike</li>
+                        <li class="list-group-item">Cars</li>
+                        <li class="list-group-item">Motorbike</li>
+                        <li class="list-group-item">Return Times</li>
+                        <li class="list-group-item">FAQs</li>
                     </ul>
                 </div>
-                <div class="col-sm foo-listing ">
-                    <h5 class="card-title ">Interest</h5>
-                    <ul class="list-group ">
-                        <li class="list-group-item ">Adventure Travel</li>
-                        <li class="list-group-item ">Art And Culture</li>
-                        <li class="list-group-item "> Wildlife And Nature</li>
-                        <li class="list-group-item ">Family Holidays</li>
-                        <li class="list-group-item ">Culinary Trip</li>
+                <div class="col-sm foo-list">
+                    <h5 class="card-title footer-card">Interest</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Adventure Travel</li>
+                        <li class="list-group-item">Art And Culture</li>
+                        <li class="list-group-item"> Wildlife And Nature</li>
+                        <li class="list-group-item">Family Holidays</li>
+                        <li class="list-group-item">Culinary Trip</li>
                     </ul>
                 </div>
             </div>
