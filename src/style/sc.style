@@ -343,3 +343,31 @@
 .plus:hover {
     background-color: #FFCD61 !important;
 }          
+
+
+
+ .testimonial-button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 132px;
+        height: 55px;
+        background: #FFFFFF;
+        border-radius: 16px 0px 0px 0px;
+        margin: auto;
+        border: none !important;
+    }
+    .prev-testimonial-button {
+        border-radius: 16px 0px 0px 0px;
+        border: none;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+    }
+    .next-testimonial-button {
+        border-radius: 16px 0px 0px 0px;
+        border: none;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+    }

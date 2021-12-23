@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a href="/home.html">
                     <img src="/src/images/dot.png" width="30" height="30" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,15 +23,21 @@
               </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Home</a>
-                        <a class="nav-item nav-link" href="#">Vehicle Type</a>
-                        <a class="nav-item nav-link" href="#">History</a>
-                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link active" href="/home.html">Home</a>
+                        <a class="nav-item nav-link" href="/vehicle.html">Vehicle Type</a>
+                        <a class="nav-item nav-link" href="/home.html">History</a>
+                        <a class="nav-item nav-link" href="/home.html">About</a>
                         <a class="nav-item">
-                            <button class="btn btn-sm btn-outline-warning btn-lg nav-home-btn" onclick="location.href = 'index.html'" type="button">Login</button>
+                            <button class="btn btn-sm btn-outline-warning btn-message-profile" type="button">
+                                <i class="bi bi-envelope"></i>
+                            </button>
                         </a>
                         <a class="nav-item">
-                            <button class="btn btn-sm btn-lg btn-warning yellow-color nav-home-btn" onclick="location.href = 'signup.html'" type="button">Register</button>
+                            <a href="/profile.html">
+                                <button type="button" class="btn btn-light btn-circle btn-sm profile-btn-picture">
+                                    <img src="/src/images/edward.png" class="profile-btn-image" alt="profile-thumbnail">
+                                </button>
+                            </a>
                         </a>
                     </div>
                 </div>
@@ -43,7 +49,7 @@
         <section>
             <div class="banner-content">
                 <div class="container-fluid main-child-home">
-                    <img src="/src/images/home-bg.png" class="img-fluid " alt="bg">
+                    <img src="/src/images/home-bg.png" class="img-fluid-home" alt="bg">
                     <div class="container-fluid bg-pass-home">
                         <div>
                             <h1 class="title-header-lg">Explore and <br>Travel</h1>
@@ -116,45 +122,51 @@
             <div class="popular-section">
                 <div class="d-flex justify-content-between popular-header">
                     <h1 class="home-title">Popular In Town</h1>
-                    <a href="/viewMore.html" type="button" class="btn btn-link btn-next-viewAll">View all<i class="bi bi-chevron-right"></i></a>
+                    <a href="/vehicle.html" type="button" class="btn btn-link btn-next-viewAll">View all<i class="bi bi-chevron-right"></i></a>
                 </div>
-                <div class="container-fluid popular-home-section">
+
+                <div class="container-fluid view-popular-home">
                     <div class="row">
-
-                        <div class="row">
-                            <div class="card col-sm col-md-4 col-lg vehicle-card vehicle-card-home">
+                        <div class="card col-sm col-md col-lg vehicle-card">
+                            <a href="/order.html">
                                 <img src="/src/images/popular-one.png" class="card-img-top view-popular-image" alt="pop">
-                                <div class="card-body view-popular-card">
-                                    <p><strong>Merapi</strong></p>
-                                    <p><small>Yogyakarta</small></p>
-                                </div>
-                            </div>
-
-                            <div class="card col-sm col-md-4 col-lg vehicle-card vehicle-card-home">
-                                <img src="/src/images/popular-two.png" class="card-img-top view-popular-image" alt="pop">
-                                <div class="card-body view-popular-card">
-                                    <p><strong>Teluk Bogam</strong></p>
-                                    <p><small>Kalimantan</small></p>
-                                </div>
-                            </div>
-                            <div class="card col-sm col-md-4 col-lg vehicle-card vehicle-card-home">
-                                <img src="/src/images/popular-three.png" class="card-img-top view-popular-image" alt="pop">
-                                <div class="card-body view-popular-card">
-                                    <p><strong>Bromo</strong></p>
-                                    <p><small>Malang</small></p>
-                                </div>
-                            </div>
-                            <div class="card col-sm col-md-4 col-lg vehicle-card vehicle-card-home">
-                                <img src="/src/images/popular-four.png" class="card-img-top view-popular-image" alt="pop">
-                                <div class="card-body view-popular-card">
-                                    <p><strong>Malioboro</strong></p>
-                                    <p><small>Yogyakarta</small></p>
-                                </div>
+                            </a>
+                            <div class="card-body view-popular-card">
+                                <p><strong>Merapi</strong></p>
+                                <p><small>Yogyakarta</small></p>
                             </div>
                         </div>
 
+                        <div class="card col-sm col-md col-lg vehicle-card">
+                            <a href="/order.html">
+                                <img src="/src/images/popular-two.png" class="card-img-top view-popular-image" alt="pop">
+                            </a>
+                            <div class="card-body view-popular-card">
+                                <p><strong>Teluk Bogam</strong></p>
+                                <p><small>Kalimantan</small></p>
+                            </div>
+                        </div>
+                        <div class="card col-sm col-md col-lg vehicle-card ">
+                            <a href="/order.html">
+                                <img src="/src/images/popular-three.png" class="card-img-top view-popular-image" alt="pop">
+                            </a>
+                            <div class="card-body view-popular-card">
+                                <p><strong>Bromo</strong></p>
+                                <p><small>Malang</small></p>
+                            </div>
+                        </div>
+                        <div class="card col-sm col-md col-lg vehicle-card">
+                            <a href="/order.html">
+                                <img src="/src/images/popular-four.png" class="card-img-top view-popular-image" alt="pop">
+                            </a>
+                            <div class="card-body view-popular-card">
+                                <p><strong>Malioboro</strong></p>
+                                <p><small>Yogyakarta</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
